@@ -1,0 +1,36 @@
+{
+  "name": "nicksdot/phpstan-phpstorm-error-identifiers",
+  "description": "Custom PHPStan formatter to show error identifiers in PhpStorm inspection output.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nick Sdot",
+      "email": "hi@nicksdot.dev"
+    }
+  ],
+  "require": {
+    "php": ">=8.3",
+    "phpstan/phpstan": "^2.0.1"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.59",
+    "phpstan/phpstan-strict-rules": "^2.0.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "NickSdot\\PhpStanPhpStormErrorIdentifiers\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "fixer": "vendor/bin/php-cs-fixer --config=./.php-cs-fixer.php --allow-risky=yes",
+    "test": "phpunit --colors"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
