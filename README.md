@@ -10,7 +10,7 @@
 ```neon
 services:
 	errorFormatter.checkstyle:
-		class:  NickSdot\PhpStanPhpStormErrorIdentifiers\CheckstyleErrorFormatterPhpStorm # change to where you pasted it!
+		class:  NickSdot\PhpStanPhpStormErrorIdentifiers\CheckstyleErrorFormatterPhpStorm
 ```
 
 That's it.
