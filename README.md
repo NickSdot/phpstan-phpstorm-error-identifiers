@@ -1,4 +1,4 @@
-# Show PHPStan error identifiers in PhpStorm inspection output
+# PHPStan error identifiers in PhpStorm inspection output
 
 <img src=".github/img/example.png" alt="PHPStan error identifiers in PhpStorm inspection output" />
 

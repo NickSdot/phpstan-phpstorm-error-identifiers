@@ -15,7 +15,7 @@ use function htmlspecialchars;
 use function sprintf;
 
 /** @api */
-final readonly class CustomCheckstyleFormatterPhpStorm implements ErrorFormatter
+final readonly class CheckstyleErrorFormatterPhpStorm implements ErrorFormatter
 {
     public function __construct(private RelativePathHelper $relativePathHelper) {}
 
