@@ -14,10 +14,18 @@ use function count;
 use function htmlspecialchars;
 use function sprintf;
 
-/** @api */
-final readonly class CheckstyleErrorFormatterPhpStorm implements ErrorFormatter
+/**
+ * @api
+ * @readonly
+ */
+final class CheckstyleErrorFormatterPhpStorm implements ErrorFormatter
 {
-    public function __construct(private RelativePathHelper $relativePathHelper) {}
+    private RelativePathHelper $relativePathHelper;
+    public function __construct(
+        RelativePathHelper $relativePathHelper
+    ) {
+        $this->relativePathHelper = $relativePathHelper;
+    }
 
     public function formatErrors(
         AnalysisResult $analysisResult,
